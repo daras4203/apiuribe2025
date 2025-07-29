@@ -17,11 +17,13 @@ public class Personaje {
     private Integer poderDefensa;
     private String fotografia;
     private LocalDate fechaCreacion;
+    private String categoria;
+    private Boolean lejendario;
 
     public Personaje() {
     }
 
-    public Personaje(Integer id, String nombre, Integer cantidadVida, Integer poderAtaque, Integer poderDefensa, String fotografia, LocalDate fechaCreacion) {
+    public Personaje(Integer id, String nombre, Integer cantidadVida, Integer poderAtaque, Integer poderDefensa, String fotografia, LocalDate fechaCreacion, String categoria, Boolean lejendario) {
         this.id = id;
         this.nombre = nombre;
         this.cantidadVida = cantidadVida;
@@ -29,8 +31,9 @@ public class Personaje {
         this.poderDefensa = poderDefensa;
         this.fotografia = fotografia;
         this.fechaCreacion = fechaCreacion;
+        this.categoria = categoria;
+        this.lejendario = lejendario;
     }
-
 
     public Integer getId() {
         return id;
@@ -87,4 +90,9 @@ public class Personaje {
     public void setFechaCreacion(LocalDate fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
     }
+
+    public String getCategoria(){ return categoria;}
+
+    private void setCategoria(String categoria) {this.categoria = categoria;}
+
 }
