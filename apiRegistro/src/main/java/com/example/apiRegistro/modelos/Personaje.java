@@ -18,7 +18,7 @@ public class Personaje {
     private String fotografia;
     private LocalDate fechaCreacion;
     private String categoria;
-    private Boolean lejendario;
+    private Boolean legendario;
 
     public Personaje() {
     }
@@ -32,7 +32,7 @@ public class Personaje {
         this.fotografia = fotografia;
         this.fechaCreacion = fechaCreacion;
         this.categoria = categoria;
-        this.lejendario = lejendario;
+        this.legendario = legendario;
     }
 
     public Integer getId() {
@@ -91,8 +91,12 @@ public class Personaje {
         this.fechaCreacion = fechaCreacion;
     }
 
-    public String getCategoria(){ return categoria;}
+    public String getCategoria() { return categoria; }
 
-    private void setCategoria(String categoria) {this.categoria = categoria;}
+    private void setCategoria(String categoria) { this.categoria = categoria; }
 
+    public Boolean getLegendario() { return legendario; }
+
+    private void setLegendario(Boolean legendario) { this.legendario = legendario; }
 }
+
